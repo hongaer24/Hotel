@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.houno.hotel">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_180x180"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity android:name=".ui.activity.LoginActivity">
+
+        </activity>
+
+        <activity android:name=".ui.activity.RoomStateListActivity" />
+
+        <activity
+            android:name=".ui.activity.EditPassWordActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.GuestRoomActivity" />
+
+        <activity android:name=".ui.activity.RoomStateList2Activity" />
+        <activity android:name=".ui.activity.PersonalCleanDocActivity" />
+        <activity android:name=".ui.activity.SearchBillsActivity" />
+        <activity android:name=".ui.activity.SearchRoomStateEditActivity" />
+        <activity android:name=".ui.activity.DatePickerActivity" />
+        <!--预订模块-->
+        <activity android:name=".ui.activity.book.BookActivity" />
+        <activity android:name=".ui.activity.SearchRoomNumberActivity" />
+        <activity android:name=".ui.activity.book.BookQueryActivity"/>
+        <activity android:name=".ui.activity.book.QueryConditionsActivity"/>
+
+        <activity android:name=".ui.activity.book.NewOrderActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"  />
+        <activity android:name=".ui.activity.book.GetPersonalInfoActivity" />
+        <activity android:name=".ui.activity.book.OrderListActivity"/>
+        <activity android:name=".ui.activity.book.QueryOrderActivity"/>
+        <activity android:name=".ui.activity.book.OrderDetailActivity"/>
+
+        <activity android:name=".ui.activity.SearchAllotRoomActivity"/>
+        <activity android:name=".ui.activity.AllotRoomListActivity"/>
+
+
+
+
+        <activity android:name=".TestActivity"/>
+    </application>
+
+</manifest>

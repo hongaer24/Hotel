@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_room_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/app_theme_black" />
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/app_theme_black" />
+
+        <TextView
+            android:id="@+id/v_old"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/VC"/>
+
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:id="@+id/v_new"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/VD"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_business_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_theme_black" />
+
+    <TextView
+        android:id="@+id/tv_finish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_theme_black" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/app_theme_org</color>
+
+
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="app_theme_org">#FF7121</color>
+    <color name="app_theme_org_press">#E95A0A</color>
+
+
+    <color name="app_theme_black">#505050</color>
+    <color name="app_theme_txt2">#838281</color>
+
+    <color name="line">#dededd</color>
+
+    <color name="hyperlinks_blue">#4769e2</color>
+
+    
+    <color name="EA">#65C9FF</color>
+    <color name="ED">#FFC100</color>
+    <color name="INCO">#B348B3</color>
+    <color name="OC">#6666ff</color>
+    <color name="OD">#403F40</color>
+    <color name="OOO">#FF6564</color>
+    <color name="VC">#008100</color>
+    <color name="VD">#818181</color>
+    <color name="VIP">#440000</color>
+
+</resources>
