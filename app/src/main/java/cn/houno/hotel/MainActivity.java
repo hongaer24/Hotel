@@ -18,6 +18,7 @@ import cn.houno.hotel.ui.fragment.RoomFragment;
 import cn.houno.hotel.ui.fragment.WorkFragment;
 import cn.houno.hotel.ui.activity.BaseActivity;
 import cn.houno.hotel.utils.QStatusBarUtil;
+import cn.houno.hotel.utils.StatusBarUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     WorkFragment workFragment;
     RoomFragment roomFragment;
     MyFragment myFragment;
+    MessageFragment messageFragment;
+    private MainActivity mActivity;
 
 
     @Override
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        mActivity = MainActivity.this;
+       // StatusBarUtils.setWindowStatusBarColor(mActivity, R.color.app_theme_green);
         initData();
         initEvent();
     }
@@ -50,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void initData() {
 
-        QStatusBarUtil.setWindowStatusBarColor(MainActivity.this, R.color.app_theme_org_press);
+        QStatusBarUtil.setWindowStatusBarColor(MainActivity.this, R.color.app_theme_org);
 
         select(0);
     }
@@ -62,14 +67,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
-                    case R.id.rb_work:
+                    case R.id.rb_message:
                         select(0);
                         break;
-                    case R.id.rb_room:
+                    case R.id.rb_work:
                         select(1);
                         break;
-                    case R.id.rb_my:
+                    case R.id.rb_room:
                         select(2);
+                        break;
+                    case R.id.rb_my:
+                        select(3);
                         break;
                 }
             }
@@ -83,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
 
         switch (i) {
             case 0:
+                if (messageFragment == null) {
+                    messageFragment = new MessageFragment();
+                    ft.add(R.id.fl_content, messageFragment);
+                } else {
+                    ft.show(messageFragment);
+                }
+                break;
+            case 1:
                 if (workFragment == null) {
                     workFragment = new WorkFragment();
                     ft.add(R.id.fl_content, workFragment);
@@ -90,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     ft.show(workFragment);
                 }
                 break;
-            case 1:
+            case 2:
                 if (roomFragment == null) {
                     roomFragment = new RoomFragment();
                     ft.add(R.id.fl_content, roomFragment);
@@ -98,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                     ft.show(roomFragment);
                 }
                 break;
-            case 2:
+            case 3:
                 if (myFragment == null) {
                     myFragment = new MyFragment();
                     ft.add(R.id.fl_content, myFragment);
@@ -120,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
         }
         if (myFragment != null) {
             fragmentTransaction.hide(myFragment);
+        }
+        if (messageFragment != null) {
+            fragmentTransaction.hide(messageFragment);
         }
     }
 

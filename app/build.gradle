@@ -34,4 +34,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
     compile project(':tablefixheaders')
     compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    compile 'com.shizhefei:ViewPagerIndicator:1.1.4'
 }

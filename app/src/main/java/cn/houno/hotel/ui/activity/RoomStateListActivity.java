@@ -135,7 +135,6 @@ public class RoomStateListActivity extends BaseActivity {
     public void initData() {
         super.initData();
         mActivity = RoomStateListActivity.this;
-
         mRefreshView.startRefresh();
     }
 

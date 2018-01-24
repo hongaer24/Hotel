@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">@color/app_theme_org</color>
-
+    <color name="imageview_background_gray">#ECECEC</color>
 
 
     <color name="transparent">#00000000</color>
@@ -29,5 +29,19 @@
     <color name="VC">#008100</color>
     <color name="VD">#818181</color>
     <color name="VIP">#440000</color>
+
+    <!--景点标签-->
+
+    <color name="label_mid_green">#A1DACF</color>
+    <color name="label_dark_green">#489C02</color>
+    <color name="label_light_green">#F2FAED</color>
+
+    <color name="label_mid_red">#FDD0E4</color>
+    <color name="label_dark_red">#EB5D90</color>
+    <color name="label_light_red">#FDECF4</color>
+    <color name="light_gray_txt">#999999</color>
+    <color name="orgs_txt">#FF6600</color>
+    <color name="app_theme_green">#009A44</color>
+    <color name="black_txt">#505050</color>
 
 </resources>

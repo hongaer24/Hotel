@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2.5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_vc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_vc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="干净房"
+                android:textColor="@color/app_theme_black"
+                android:textSize="11dp" />
+
+            <!-- <TextView
+                 android:id="@+id/tv_vc_count"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="1dp"
+                 android:text="(0)"
+                 android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_vd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="空脏房"
+                android:textColor="@color/app_theme_black"
+                android:textSize="11dp"/>
+
+            <!--       <TextView
+                       android:id="@+id/tv_vd_count"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="1dp"
+                       android:text="(0)"
+                       android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_oc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_oc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="在住净房"
+                android:textColor="@color/app_theme_black"
+                android:textSize="11dp"/>
+
+            <!--    <TextView
+                    android:id="@+id/tv_oc_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:text="(0)"
+                    android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_od"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_od" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="在住脏房"
+                android:textColor="@color/app_theme_black"
+                android:textSize="11dp"/>
+
+            <!--     <TextView
+                     android:id="@+id/tv_od_count"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="1dp"
+                     android:text="(0)"
+                     android:textSize="10sp" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2.5dp"
+        android:paddingTop="2.5dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_ooo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_ooo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="维修房"
+                android:textColor="@color/app_theme_black"
+                android:textSize="11dp"/>
+
+            <!--   <TextView
+                   android:id="@+id/tv_ooo_count"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="1dp"
+                   android:text="(0)"
+                   android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_ea" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="预抵"
+                android:textColor="@color/app_theme_black"
+                android:textSize="10dp"/>
+
+            <!--     <TextView
+                     android:id="@+id/tv_ea_count"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="1dp"
+                     android:text="(0)"
+                     android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_ed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="预离"
+                android:textColor="@color/app_theme_black"
+                android:textSize="10dp"/>
+
+            <!--      <TextView
+                      android:id="@+id/tv_ed_count"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="1dp"
+                      android:text="(0)"
+                      android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_inco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_inco" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="保密"
+                android:textColor="@color/app_theme_black"
+                android:textSize="10dp"/>
+
+            <!--    <TextView
+                    android:id="@+id/tv_inco_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:text="(0)"
+                    android:textSize="10sp" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="2.5dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_vip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_vip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="重要客人"
+                android:textColor="@color/app_theme_black"
+                android:textSize="10dp"/>
+            <!--
+                        <TextView
+                            android:id="@+id/tv_vip_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:text="(0)"
+                            android:textSize="10sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_fk_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="全部"
+                android:textColor="@color/app_theme_black"
+                android:textSize="10dp"/>
+
+            <!--     <TextView
+                     android:id="@+id/tv_all_count"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="1dp"
+                     android:text="(0)"
+                     android:textSize="10sp" />-->
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/trl_room_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <GridView
+            android:id="@+id/gv_room_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:padding="2dp"
+            android:overScrollMode="never"
+            android:verticalSpacing="5dp"
+            android:gravity="center"/>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+</LinearLayout>
