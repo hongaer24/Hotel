@@ -160,26 +160,25 @@ public class ScenicTicketPage extends BaseFragment implements View.OnClickListen
 
     }
 
-
     private void showEditRoomStateDialog(final RoomStatusListBean.InfoBean roomStatusListBean) {
         String roomstatecode = roomStatusListBean.getSys_roomstatecode();
         String roomstatecode2 = "";
         if (roomstatecode.equals("VC")) {
-            roomstatecode2 = "VD";
+            roomstatecode2 = "空脏房";
         } else if (roomstatecode.equals("VD")) {
-            roomstatecode2 = "VC";
+            roomstatecode2 = "干净房";
         } else if (roomstatecode.equals("OC")) {
-            roomstatecode2 = "OD";
+            roomstatecode2 = "在住脏房";
         } else if (roomstatecode.equals("OD")) {
-            roomstatecode2 = "OC";
+            roomstatecode2 = "在住净房";
         } else {
             return;
         }
         final String finalRoomstatecode = roomstatecode2;
 
         AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
-        builder.setTitle(roomStatusListBean.getRoomcode() + "  " + roomstatecode);
-        builder.setMessage("确认修改成" + " " + roomstatecode2 + "吗？");
+       // builder.setTitle(roomStatusListBean.getRoomcode() + "  " + roomstatecode);
+        builder.setMessage("确认设置房间" +roomStatusListBean.getRoomcode()+ "成" + roomstatecode2 + "吗？");
         builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -195,7 +194,6 @@ public class ScenicTicketPage extends BaseFragment implements View.OnClickListen
         });
         builder.create().show();
     }
-
 
     private void getDataFromServer(String type) {
         //getRoomStateCount();
@@ -244,7 +242,7 @@ public class ScenicTicketPage extends BaseFragment implements View.OnClickListen
             }
 
             if (mAdapter == null) {
-                mAdapter = new RoomStateListAdapter(mActivity, list);
+                mAdapter = new RoomStateListAdapter(getContext(), list);
                 gvRoomStatus.setAdapter(mAdapter);
             } else {
                 mAdapter.setData(list);

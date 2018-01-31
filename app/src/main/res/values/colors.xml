@@ -12,7 +12,9 @@
     <color name="app_theme_org_press">#E95A0A</color>
 
 
+
     <color name="app_theme_black">#505050</color>
+    <color name="app_theme_light_black">#181717</color>
     <color name="app_theme_txt2">#838281</color>
 
     <color name="line">#dededd</color>

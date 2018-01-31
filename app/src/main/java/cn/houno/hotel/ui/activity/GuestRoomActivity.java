@@ -56,7 +56,7 @@ public class GuestRoomActivity extends BaseActivity {
         tvHotelName.setText(PrefUtils.getString(mActivity,"shortname",""));
         tvName.setText(PrefUtils.getString(mActivity,"name",""));
         tvDate.setText(PrefUtils.getString(mActivity,"businessday",""));
-        gvCategory.setAdapter(new WorkCategoryAdapter(mActivity, mCategories));
+        //gvCategory.setAdapter(new WorkCategoryAdapter(mActivity, mCategories));
     }
 
     @Override

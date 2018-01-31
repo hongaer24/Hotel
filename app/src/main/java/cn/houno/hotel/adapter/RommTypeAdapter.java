@@ -16,7 +16,7 @@ import cn.houno.hotel.R;
  * Created by qzc on 2017/5/8 0008.
  */
 
-public class WorkCategoryAdapter extends BaseAdapter {
+public class RommTypeAdapter extends BaseAdapter {
 
 
     @Bind(R.id.tv_category)
@@ -28,7 +28,7 @@ public class WorkCategoryAdapter extends BaseAdapter {
     private String[] mRoomCount;
 
 
-    public WorkCategoryAdapter(Context context, String[] categories, String[] roomCount) {
+    public RommTypeAdapter(Context context, String[] categories, String[] roomCount) {
         mContext = context;
         mInflater = LayoutInflater.from(context);
         mCategories = categories;
@@ -54,22 +54,35 @@ public class WorkCategoryAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.item_square_grid, parent, false);
+            convertView = mInflater.inflate(R.layout.item_room_type_grid, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.llContainer.setBackgroundColor(mContext.getResources().getColor(R.color.white));
+        holder.llContainer.setBackgroundColor(mContext.getResources().getColor(R.color.app_theme_light_black));
         holder.tvCategory.setText(mCategories[position]);
         holder.tvCount.setText(mRoomCount[position]);
         return convertView;
     }
 
-
-
-
     static class ViewHolder {
+        @Bind(R.id.tv_category)
+        TextView tvCategory;
+        @Bind(R.id.tv_count)
+        TextView tvCount;
+        @Bind(R.id.ll_container)
+        LinearLayout llContainer;
+
+        ViewHolder(View view) {
+            ButterKnife.bind(this, view);
+        }
+    }
+
+
+
+
+    /*static class ViewHolder {
         @Bind(R.id.tv_category)
         TextView tvCategory;
         @Bind(R.id.ll_container)
@@ -81,6 +94,6 @@ public class WorkCategoryAdapter extends BaseAdapter {
             ButterKnife.bind(this, view);
         }
     }
-
+*/
 
 }

@@ -38,8 +38,8 @@ public class RoomFragment extends BaseFragment {
     ViewPager vpHomeHs;
     @Bind(R.id.ll_main_content)
     LinearLayout llMainContent;
-    @Bind(R.id.xsv_main)
-    ScrollView xsvMain;
+   /* @Bind(R.id.xsv_main)
+    ScrollView xsvMain;*/
 
     private ArrayList<Fragment> hsFragments;
     private HotelBulkPage hotelBulkPage;
@@ -75,7 +75,7 @@ public class RoomFragment extends BaseFragment {
         sivHomeHs.setOnTransitionListener(new OnTransitionTextListener()
                 .setColor(selectColor, unSelectColor).setSize(selectSize, unSelectSize));
         //设置下滑条的颜色和高度
-        sivHomeHs.setScrollBar(new ColorBar(mActivity, getResources().getColor(R.color.app_theme_org), 5));
+        sivHomeHs.setScrollBar(new ColorBar(mActivity, getResources().getColor(R.color.white), 5));
 
         //sivHomeHs.setScrollBar(new ColorBar(mActivity,  0xFFFFFFF, 10));
         //        vpHs.setOffscreenPageLimit(2);

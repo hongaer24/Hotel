@@ -16,28 +16,27 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/app_theme_org"
+        android:background="@color/app_theme_light_black"
         android:orientation="horizontal"
         android:paddingTop="3dp">
         <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/main_tab_radio_button"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="首页" />
+        <RadioButton
             android:id="@+id/rb_message"
             style="@style/main_tab_radio_button"
-            android:checked="true"
-            android:drawableTop="@drawable/selector_tab_work"
+            android:drawableTop="@drawable/selector_tab_room"
             android:text="消息" />
-        <RadioButton
-            android:id="@+id/rb_work"
-            style="@style/main_tab_radio_button"
-            android:checked="true"
-            android:drawableTop="@drawable/selector_tab_work"
-            android:text="工作" />
 
-
+<!--
         <RadioButton
             android:id="@+id/rb_room"
             style="@style/main_tab_radio_button"
             android:drawableTop="@drawable/selector_tab_room"
-            android:text="房态" />
+            android:text="房态" />-->
 
         <RadioButton
             android:id="@+id/rb_my"

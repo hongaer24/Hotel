@@ -411,7 +411,7 @@
     <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
         android:id="@+id/trl_room_status"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:overScrollMode="never">
 
         <GridView

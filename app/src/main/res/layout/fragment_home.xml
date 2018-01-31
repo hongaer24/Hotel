@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_theme_light_black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="酒店管理系统"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_my_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:src="@drawable/hello"
+        android:scaleType="fitXY"
+        android:background="#fff"/>
+
+    <GridView
+        android:id="@+id/gv_room_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="4px"
+        android:numColumns="3"
+        android:overScrollMode="never"
+        android:verticalSpacing="4px"
+        android:gravity="center"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -13,36 +13,31 @@ import butterknife.ButterKnife;
 import cn.houno.hotel.R;
 
 /**
- * Created by qzc on 2017/5/8 0008.
+ * Created by 123 on 2018/1/31.
  */
 
-public class WorkCategoryAdapter extends BaseAdapter {
+public class HomeAdapter extends BaseAdapter {
 
-
-    @Bind(R.id.tv_category)
-    TextView tvCategory;
-
+    private final LayoutInflater mInflater;
+    private final String[] mText;
+    private final int[] mImage;
     private Context mContext;
-    private LayoutInflater mInflater;
-    private String[] mCategories;
-    private String[] mRoomCount;
 
-
-    public WorkCategoryAdapter(Context context, String[] categories, String[] roomCount) {
+    public HomeAdapter(Context context, String[] text, int[] image) {
         mContext = context;
         mInflater = LayoutInflater.from(context);
-        mCategories = categories;
-        mRoomCount = roomCount;
+        mText = text;
+        mImage = image;
     }
 
     @Override
     public int getCount() {
-        return mCategories.length;
+        return mText.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return mCategories[position];
+        return mText[position];
     }
 
     @Override
@@ -52,35 +47,28 @@ public class WorkCategoryAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder;
+         ViewHolder holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.item_square_grid, parent, false);
+            convertView = mInflater.inflate(R.layout.item_home, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.llContainer.setBackgroundColor(mContext.getResources().getColor(R.color.white));
-        holder.tvCategory.setText(mCategories[position]);
-        holder.tvCount.setText(mRoomCount[position]);
+        //holder.llContainer.setBackgroundColor(mContext.getResources().getColor(R.color.white));
+        holder.image.setImageResource(mImage[position]);
+        holder.title.setText(mText[position]);
         return convertView;
     }
 
-
-
-
     static class ViewHolder {
-        @Bind(R.id.tv_category)
-        TextView tvCategory;
-        @Bind(R.id.ll_container)
-        LinearLayout llContainer;
-        @Bind(R.id.tv_count)
-        TextView tvCount;
+        @Bind(R.id.image)
+        ImageView image;
+        @Bind(R.id.title)
+        TextView title;
 
         ViewHolder(View view) {
             ButterKnife.bind(this, view);
         }
     }
-
-
 }

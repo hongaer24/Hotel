@@ -64,7 +64,7 @@ public class WorkFragment extends BaseFragment {
 
     @Override
     public void initData() {
-        categoryAdapter = new WorkCategoryAdapter(mActivity, mCategories);
+        //categoryAdapter = new WorkCategoryAdapter(mActivity, mCategories);
         gvCategory.setAdapter(categoryAdapter);
 
         tvHotelName.setText(PrefUtils.getString(mActivity, "shortname", ""));
