@@ -46,10 +46,10 @@ public class HotelBulkPage extends BaseFragment {
     private RommTypeAdapter rommTypeAdapter;
     // 图片封装为一个数组
     private String[] categorTitle = {"总房数", "在住房", "预离房", "停售房", "可售房", "预定房", "出租率", "平均房价"};
-    private String[] roomType = {"行政大床房", "雅致大床房", "行政套房", "高级大床房", "高级标准房", "高级大床房"};
+    private String[] roomType = {"行政大床房", "雅致大床房", "行政套房", "高级大床房", "高级标准房", "高级大床房","行政大床房", "雅致大床房", "行政套房",};
 
     private String[] categoryName = {"201", "200", "100", "201", "201", "201", "20%", "419"};
-    private String[] roomTypeName = {"201", "200", "100", "201", "201", "201"};
+    private String[] roomTypeName = {"201", "200", "100", "201", "201", "201", "201", "201", "201"};
 
     private List<Map<String, Object>> categoryList = new ArrayList<>();
 

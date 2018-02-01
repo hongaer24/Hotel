@@ -18,25 +18,60 @@
             android:textSize="18sp" />
 
     </RelativeLayout>
-    <ImageView
-        android:id="@+id/iv_my_toggle"
+
+    <RelativeLayout
+        android:id="@+id/rl_my_haed"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8"
-        android:src="@drawable/hello"
-        android:scaleType="fitXY"
-        android:background="#fff"/>
+        android:layout_height="240dp"
+        android:background="@drawable/hello"
+        android:clickable="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/civ_headview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_my_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:text="海口华彩大酒店 | 郑权经理"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+
 
     <GridView
         android:id="@+id/gv_room_status"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.9"
         android:horizontalSpacing="4px"
         android:numColumns="3"
         android:overScrollMode="never"
         android:verticalSpacing="4px"
         android:gravity="center"
-        android:scrollbars="none" />
+        android:scrollbars="none"
+        android:padding="10dp"/>
 
 </LinearLayout>
