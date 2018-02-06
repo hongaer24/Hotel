@@ -9,7 +9,7 @@
         android:id="@+id/rl_top_bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/app_theme_org">
+        android:background="@color/app_theme_light_black">
 
         <ImageView
             android:id="@+id/iv_back"
@@ -40,260 +40,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            //订单详情
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#f0f0f0"
-                android:gravity="center_vertical"
-                android:minHeight="35dp"
                 android:layout_marginBottom="5dp"
-                android:paddingLeft="10dp"
-                android:text="基本信息"
-                android:textColor="@color/app_theme_black"
-                android:textSize="16sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="姓　名："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-
-                    android:minHeight="35dp">
-
-                    <EditText
-                        android:id="@+id/et_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:hint="请输入姓名"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:textColor="@color/app_theme_black"
-                        android:textSize="14sp" />
-                </FrameLayout>
-
-                <ImageView
-                    android:id="@+id/iv_contract"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_tab_my" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="性别："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <android.support.v7.widget.AppCompatSpinner
-                    android:id="@+id/sp_sex"
-                    android:entries="@array/sex"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="身份证："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <EditText
-                        android:id="@+id/et_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:hint="请输入身份证号码"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:textColor="@color/app_theme_black"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="国　家："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <TextView
-                        android:id="@+id/tv_country"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="选择国家"
-                        android:textSize="14sp" />
-                </FrameLayout>
-                <TextView
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="省　份："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <TextView
-                        android:id="@+id/tv_province"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="选择城市"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="城　市："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <TextView
-                        android:id="@+id/tv_city"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="选择城市"
-                        android:textSize="14sp" />
-                </FrameLayout>
-                <TextView
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="手机号："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <EditText
-                        android:id="@+id/et_phone"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:hint="输入手机号码"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:textColor="@color/app_theme_black"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </LinearLayout>
-
-            <TextView
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:background="#f0f0f0"
                 android:gravity="center_vertical"
                 android:minHeight="35dp"
                 android:paddingLeft="10dp"
-                android:text="订单详情"
+                android:text="房间订单详情"
                 android:textColor="@color/app_theme_black"
                 android:textSize="16sp" />
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -319,26 +79,26 @@
                         android:textColor="@color/app_theme_black"
                         android:textSize="16sp" />
 
-                    <FrameLayout
+                   <!-- <FrameLayout
                         android:id="@+id/fl_arr_txt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shape_black_white"
-                        android:minHeight="35dp">
+                        android:minHeight="35dp">-->
 
                         <TextView
                             android:id="@+id/tv_arr_date"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:background="@null"
-                            android:textColor="@color/app_theme_black"
                             android:maxLines="1"
                             android:singleLine="true"
                             android:text="请选择抵达日期"
+                            android:textColor="@color/app_theme_black"
                             android:textSize="14sp" />
-                    </FrameLayout>
+                 <!--   </FrameLayout>-->
                 </LinearLayout>
 
                 <LinearLayout
@@ -359,25 +119,25 @@
                         android:textColor="@color/app_theme_black"
                         android:textSize="16sp" />
 
-                    <FrameLayout
+                  <!--  <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shape_black_white"
-                        android:minHeight="35dp">
+                        android:minHeight="35dp">-->
 
                         <TextView
                             android:id="@+id/tv_lea_date"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_marginLeft="10dp"
                             android:background="@null"
-                            android:textColor="@color/app_theme_black"
                             android:maxLines="1"
                             android:singleLine="true"
                             android:text="请选择离店日期"
+                            android:textColor="@color/app_theme_black"
                             android:textSize="14sp" />
-                    </FrameLayout>
+                 <!--   </FrameLayout>-->
                 </LinearLayout>
 
                 <TextView
@@ -392,10 +152,52 @@
                     android:textColor="@color/app_theme_black" />
             </RelativeLayout>
 
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:minHeight="45dp"
+                  android:orientation="horizontal"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="退房时间："
+                      android:textColor="@color/app_theme_black"
+                      android:textSize="16sp" />
+
+                  <FrameLayout
+                      android:layout_width="165dp"
+                      android:layout_height="wrap_content"
+
+                      android:background="@drawable/shape_black_white"
+                      android:minHeight="35dp">
+
+                      <TextView
+                          android:id="@+id/tv_lea_time"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:background="@null"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:text="请选择退房时间"
+                          android:textSize="14sp" />
+                  </FrameLayout>
+
+              </LinearLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:minHeight="45dp"
                 android:orientation="horizontal"
                 android:paddingLeft="10dp"
@@ -404,32 +206,57 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="退房时间："
+                    android:text="入住人数："
                     android:textColor="@color/app_theme_black"
                     android:textSize="16sp" />
 
-                <FrameLayout
-                    android:layout_width="165dp"
+                <TextView
+                    android:id="@+id/tv_people_count"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="请输入入住人数"
+                    android:textSize="14sp" />
 
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
 
-                    <TextView
-                        android:id="@+id/tv_lea_time"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="请选择退房时间"
-                        android:textSize="14sp" />
-                </FrameLayout>
+                <!--     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp"
+                         android:text="人数："
+                         android:textColor="@color/app_theme_black"
+                         android:textSize="16sp" />
 
+                     <FrameLayout
+                         android:id="@+id/fl_people_number"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:background="@drawable/shape_black_white"
+                         android:minHeight="35dp">
+
+                         <TextView
+                             android:id="@+id/tv_people_number"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_gravity="center_vertical"
+                             android:layout_marginLeft="5dp"
+                             android:background="@null"
+                             android:maxLines="1"
+                             android:singleLine="true"
+                             android:text="选择人数"
+                             android:textSize="14sp" />
+                     </FrameLayout>-->
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -442,62 +269,101 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="房间数："
+                    android:text="房  间   数："
                     android:textColor="@color/app_theme_black"
                     android:textSize="16sp" />
 
-                <FrameLayout
-                    android:id="@+id/fl_room_count"
-                    android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/tv_room_count"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="请输入房间数"
+                    android:textSize="14sp" />
 
-                    <TextView
-                        android:id="@+id/tv_room_count"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="5dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="选择房间数"
-                        android:textSize="14sp" />
-                </FrameLayout>
+                <!--    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="人数："
+                        android:textColor="@color/app_theme_black"
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_people_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_black_white"
+                        android:minHeight="35dp">
+
+                        <TextView
+                            android:id="@+id/tv_people_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:background="@null"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="选择人数"
+                            android:textSize="14sp" />
+                    </FrameLayout>-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
                 <TextView
+                    android:id="@+id/tv_room_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="房　    型："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_room_type1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dp"
-                    android:text="人数："
+                    android:layout_toRightOf="@+id/tv_room_type"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="请选择房型"
                     android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:id="@+id/fl_people_number"
-                    android:layout_width="0dp"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/iv_number_person"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_go" />
 
-                    <TextView
-                        android:id="@+id/tv_people_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="5dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:text="选择人数"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -507,67 +373,44 @@
                 android:paddingRight="10dp">
 
                 <TextView
+                    android:id="@+id/tv_rate_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="房　型："
+                    android:layout_alignBaseline="@+id/tv_rate_code1"
+                    android:layout_alignBottom="@+id/tv_rate_code1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="房  价  码："
                     android:textColor="@color/app_theme_black"
                     android:textSize="16sp" />
 
-                <FrameLayout
+                <TextView
+                    android:id="@+id/tv_rate_code1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <TextView
-                        android:id="@+id/tv_room_type"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:textColor="@color/app_theme_black"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="套　餐："
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/tv_rate_code"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="请选择房价码"
                     android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="match_parent"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/iv_rate_code"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_go" />
 
-                    <TextView
-                        android:id="@+id/tv_package"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                        android:textColor="@color/app_theme_black"
-                        android:textSize="14sp" />
-                </FrameLayout>
-            </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -581,90 +424,590 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="房价码："
-                    android:textColor="@color/app_theme_black"
-                    android:textSize="16sp" />
-
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape_black_white"
-                    android:minHeight="35dp">
-
-                    <TextView
-                        android:id="@+id/tv_rate_code"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        android:background="@null"
-                        android:maxLines="1"
-                        android:singleLine="true"
-                       android:textColor="@color/app_theme_black"
-                        android:textSize="14sp" />
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:minHeight="45dp"
-                android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="房　价："
+                    android:text="房　    价："
                     android:textColor="@color/app_theme_black"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tv_price"
-                    android:textColor="#ff0000"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="200.00"
+                    android:textColor="#ff0000"
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
                 android:minHeight="45dp"
-                android:text="订单备注："
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_package"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="套餐代码："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_package1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_package"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="请选择套餐类型"
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/iv_package"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_go" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_pay_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付类型："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_pay_type1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@+id/tv_pay_type"
+                    android:text="请选择支付类型"
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_pay_type"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_go" />
+
+            </RelativeLayout>
+
+            <!--  <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:gravity="center_vertical"
+                  android:minHeight="45dp"
+                  android:text="订单备注："
+                  android:textColor="@color/app_theme_black"
+                  android:textSize="16sp" />
+
+              <FrameLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="100dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:background="@drawable/shape_black_white"
+                  android:minHeight="35dp">
+
+                  <EditText
+                      android:id="@+id/et_info"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_vertical"
+                      android:background="@null"
+                      android:gravity="top"
+                      android:hint="请输入备注信息"
+                      android:maxLines="1"
+                      android:padding="10dp"
+                      android:singleLine="true"
+                      android:textColor="@color/app_theme_black"
+                      android:textSize="14sp" />
+              </FrameLayout>-->
+            //基本信息
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#f0f0f0"
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+                android:paddingLeft="10dp"
+                android:text="客人基本信息"
                 android:textColor="@color/app_theme_black"
                 android:textSize="16sp" />
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/shape_black_white"
-                android:minHeight="35dp">
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
-                <EditText
-                    android:id="@+id/et_info"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical"
-                    android:background="@null"
-                    android:gravity="top"
-                    android:hint="请输入备注信息"
-                    android:maxLines="1"
-                    android:padding="10dp"
-                    android:singleLine="true"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓　  名："
                     android:textColor="@color/app_theme_black"
-                    android:textSize="14sp" />
-            </FrameLayout>
+                    android:textSize="16sp" />
+<!--
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_black_white"
+
+                    android:minHeight="35dp">-->
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:hint="请输入真实姓名"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/app_theme_black"
+                        android:textSize="14sp" />
+           <!--     </FrameLayout>
+-->
+                <ImageView
+                    android:id="@+id/iv_contract"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_tab_my" />
+
+                <!--
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="性别："
+                                    android:textColor="@color/app_theme_black"
+                                    android:textSize="16sp" />
+
+                                <android.support.v7.widget.AppCompatSpinner
+                                    android:id="@+id/sp_sex"
+                                    android:entries="@array/sex"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手 机 号："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+<!--
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">-->
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:hint="请输入联系方式"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/app_theme_black"
+                        android:textSize="14sp" />
+              <!--  </FrameLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性       别："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+              <!--  <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">-->
+
+                    <EditText
+                        android:id="@+id/et_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:hint="请输入身份证号码"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/app_theme_black"
+                        android:textSize="14sp" />
+            <!--    </FrameLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身  份 证："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+<!--
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">
+-->
+
+                    <EditText
+                        android:id="@+id/et_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:hint="请输入身份证号码"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/app_theme_black"
+                        android:textSize="14sp" />
+               <!-- </FrameLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国　   家："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+             <!--   <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">-->
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="请选择您国籍"
+                        android:textSize="14sp" />
+              <!--  </FrameLayout>-->
+                <!--  <TextView
+                      android:layout_marginLeft="10dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="省　份："
+                      android:textColor="@color/app_theme_black"
+                      android:textSize="16sp" />
+
+                  <FrameLayout
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/shape_black_white"
+                      android:minHeight="35dp">
+
+                      <TextView
+                          android:id="@+id/tv_province"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:background="@null"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:text="选择城市"
+                          android:textSize="14sp" />
+                  </FrameLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="省        份："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+              <!--  <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">-->
+
+                    <TextView
+                        android:id="@+id/tv_province"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="请选择您户口所在的省份"
+                        android:textSize="14sp" />
+              <!--  </FrameLayout>-->
+                <!--  <TextView
+                      android:layout_marginLeft="10dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="省　份："
+                      android:textColor="@color/app_theme_black"
+                      android:textSize="16sp" />
+
+                  <FrameLayout
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/shape_black_white"
+                      android:minHeight="35dp">
+
+                      <TextView
+                          android:id="@+id/tv_province"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="10dp"
+                          android:background="@null"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:text="选择城市"
+                          android:textSize="14sp" />
+                  </FrameLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="城　    市："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+            <!--    <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">-->
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="请选择您户口所在的城市"
+                        android:textSize="14sp" />
+            <!--    </FrameLayout>-->
+                <!-- <TextView
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="手机号："
+                     android:textColor="@color/app_theme_black"
+                     android:textSize="16sp" />
+
+                 <FrameLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/shape_black_white"
+                     android:minHeight="35dp">
+
+                     <EditText
+                         android:id="@+id/et_phone"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_gravity="center_vertical"
+                         android:layout_marginLeft="10dp"
+                         android:background="@null"
+                         android:hint="输入手机号码"
+                         android:maxLines="1"
+                         android:singleLine="true"
+                         android:textColor="@color/app_theme_black"
+                         android:textSize="14sp" />
+                 </FrameLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系地址："
+                    android:textColor="@color/app_theme_black"
+                    android:textSize="16sp" />
+
+              <!--  <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_black_white"
+                    android:minHeight="35dp">-->
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14sp" />
+           <!--     </FrameLayout>-->
+                <!-- <TextView
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="手机号："
+                     android:textColor="@color/app_theme_black"
+                     android:textSize="16sp" />
+
+                 <FrameLayout
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/shape_black_white"
+                     android:minHeight="35dp">
+
+                     <EditText
+                         android:id="@+id/et_phone"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_gravity="center_vertical"
+                         android:layout_marginLeft="10dp"
+                         android:background="@null"
+                         android:hint="输入手机号码"
+                         android:maxLines="1"
+                         android:singleLine="true"
+                         android:textColor="@color/app_theme_black"
+                         android:textSize="14sp" />
+                 </FrameLayout>-->
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
@@ -672,7 +1015,7 @@
         android:id="@+id/btn_submit_order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_btn_org"
+        android:background="@color/light_blue"
         android:gravity="center"
         android:text="提交订单"
         android:textColor="@color/white"

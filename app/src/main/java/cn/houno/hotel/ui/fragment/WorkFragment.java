@@ -21,10 +21,12 @@ import cn.houno.hotel.R;
 import cn.houno.hotel.TestActivity;
 import cn.houno.hotel.adapter.WorkCategoryAdapter;
 import cn.houno.hotel.global.Api;
+import cn.houno.hotel.home.activity.BookActivity;
+import cn.houno.hotel.home.activity.RoomStateListActivity;
 import cn.houno.hotel.ui.activity.SearchAllotRoomActivity;
-import cn.houno.hotel.ui.activity.book.BookActivity;
+
 import cn.houno.hotel.ui.activity.GuestRoomActivity;
-import cn.houno.hotel.ui.activity.RoomStateListActivity;
+
 import cn.houno.hotel.utils.PrefUtils;
 import cn.houno.hotel.utils.QUtil;
 import cn.houno.hotel.view.InnerGridView;

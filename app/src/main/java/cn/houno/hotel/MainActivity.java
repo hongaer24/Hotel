@@ -11,20 +11,23 @@ import android.widget.RadioGroup;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import cn.houno.hotel.ui.fragment.HomeFragment;
-import cn.houno.hotel.ui.fragment.MessageFragment;
-import cn.houno.hotel.ui.fragment.MyFragment;
-import cn.houno.hotel.ui.fragment.RoomFragment;
-import cn.houno.hotel.ui.fragment.WorkFragment;
+
+import cn.houno.hotel.home.fragment.HomeFragment;
+
+
+import cn.houno.hotel.message.fragment.MessageFragment;
+
+
+import cn.houno.hotel.my.fragment.MyFragment;
 import cn.houno.hotel.utils.QStatusBarUtil;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    WorkFragment workFragment;
-    RoomFragment roomFragment;
-    MyFragment myFragment;
-    MessageFragment messageFragment;
+  /*  WorkFragment workFragment;
+    RoomFragment roomFragment;*/
+
+
     @Bind(R.id.fl_content)
     FrameLayout flContent;
     @Bind(R.id.rb_home)
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup rgTabBar;
     private MainActivity mActivity;
     private HomeFragment homeFragment;
+    private MessageFragment messageFragment;
+    private MyFragment myFragment;
 
 
     @Override

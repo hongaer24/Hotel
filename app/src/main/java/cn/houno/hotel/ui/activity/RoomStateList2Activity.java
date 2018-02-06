@@ -31,9 +31,10 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.houno.hotel.R;
-import cn.houno.hotel.adapter.RoomStateListAdapter;
+
 import cn.houno.hotel.bean.RoomStatusListBean;
 import cn.houno.hotel.global.Api;
+import cn.houno.hotel.home.adapter.RoomStateListAdapter;
 import cn.houno.hotel.utils.PrefUtils;
 import cn.houno.hotel.utils.QUtil;
 

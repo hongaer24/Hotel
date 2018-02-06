@@ -2,7 +2,7 @@ package cn.houno.hotel.bean;
 
 import java.util.List;
 
-import cn.houno.hotel.ui.activity.book.bean.AreaListBean;
+
 
 /**
  * 房价码
